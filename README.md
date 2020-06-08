@@ -8,7 +8,7 @@ Don't be afraid of the number: most of these exercises are very short and focus 
 The exercises follow one another in a logical _relatively_ way, but don't let one exercise stop you: go to the next, come back to it later.
 
 Each exercise must be done.  
-NOTE: **Note: ** The exercises in series 7 are a little more complex, worth a try: they are good syntheses of the progress made.
+NOTE: The exercises in series 7 are a little more complex, worth a try: they are good syntheses of the progress made.
 
 ## Resources
 
