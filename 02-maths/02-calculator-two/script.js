@@ -1,16 +1,16 @@
 
 function test(i) {
-    let a = document.getElementById("op-one").value;
-    let b = document.getElementById("op-two").value;
+    const a = parseFloat(document.getElementById("op-one").value);
+    const b = parseFloat(document.getElementById("op-two").value);
     switch(i){
         case 0:
-            return parseFloat(a) + parseFloat(b);
+            return a + b;
         case 1:
-            return parseFloat(a) - parseFloat(b);
+            return a - b;
         case 2:
-            return parseFloat(a) * parseFloat(b);
+            return a * b;
         case 3:
-            return parseFloat(a) / parseFloat(b);
+            return a / b;
         default:
             return;
     }
