@@ -1,5 +1,4 @@
-
-(() => {
+/*(() => {
 	let size = ["12px", "18px", "24px", "30px", "36px", "42px"];
 	let text = document.getElementById("target").innerHTML;
 	const target = document.getElementById("target");
@@ -23,7 +22,26 @@
 			target.appendChild(span);
 		}
 	}, 500);
-})();
+})();*/
+
+//Solution from Koen
+let text = document.querySelector('#target').innerHTML;
+document.querySelector('#target').innerHTML = '';
+
+let sizes = [12, 14, 16, 18, 20, 22];
+let counter = 0;
+
+for (let i = 0; i < text.length ; i++) {
+	if (sizes.length === counter) {
+		sizes = sizes.reverse();
+		counter = 0;
+	}
+	let span = document.createElement('span');
+	span.innerHTML = text[i];
+	span.style.fontSize = sizes[counter++] + "px";
+	document.querySelector('#target').appendChild(span);
+}
+
 /*
 	setInterval(() => {
 		const text = document.getElementById('target').innerText;
