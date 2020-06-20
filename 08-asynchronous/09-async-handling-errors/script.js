@@ -1,16 +1,28 @@
-
 (() => {
     document.querySelector('#run').addEventListener('click', () => {
-        async function processPersons(persons) {
+        async function processPersons() {
             try {
-                let persons = await window.lib.getPersons(persons);
-                return console.table(persons);
+                let persons = await window.lib.getPersons();
+                console.table(persons);
             }
             catch (error) {
                 console.error('ERROR');
             }
         }
-        let persons = processPersons();
-        console.table(persons);
+        console.warn(processPersons());
     })
 })();
+
+
+/*
+(() => {
+    const processPersons = async () => {
+        try {
+            let persons = await window.lib.getPersons();
+            console.table(persons);
+        } catch (error) {
+            console.error('ERROR');
+        }
+    }
+    processPersons();
+})();*/

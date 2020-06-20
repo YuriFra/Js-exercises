@@ -7,7 +7,6 @@ The file consists of 48 exercises, divided into 9 series.
 Don't be afraid of the number: most of these exercises are very short and focus on a particular aspect.  
 The exercises follow one another in a logical _relatively_ way, but don't let one exercise stop you: go to the next, come back to it later.
 
-Each exercise must be done.  
 NOTE: The exercises in series 7 are a little more complex, worth a try: they are good syntheses of the progress made.
 
 ## Resources
@@ -23,7 +22,5 @@ To get the most out of these exercises, some useful resources:
 - [learn js](http://www.learn-js.org/)
 - [10 js array methods](https://dev.to/frugencefidel/10-javascript-array-methods-you-should-know-4lk3)
 
-* * *
 
-Good work!
 

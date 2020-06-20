@@ -1,11 +1,10 @@
 (() => {
     document.querySelector('#run').addEventListener('click', () => {
-        let promise = window.lib.getPosts();
+        let promise = lib.getPosts();
         promise.then((posts) => {
             posts.forEach((post) => {
                 // you have to make a new promise for each item in the array of posts
-                let innerPromise = window.lib.getComments(post.id);
-                innerPromise.then((comments) => {
+                lib.getComments(post.id).then((comments) => {
                     console.table(comments);
                 });
             });
